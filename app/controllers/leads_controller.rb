@@ -15,6 +15,20 @@ class LeadsController < ApplicationController
     redirect_to root_url
   end
 
+  def update
+    @lead = Lead.find_by!(token: params[:id])
+    if @lead.update(lead_params)
+      redirect_to lead_success_path(@lead)
+    else
+      render :contato
+    end
+  rescue ActiveRecord::RecordNotFound
+    flash[:alert] = "Ocorreu um erro."
+    redirect_to root_url
+  end
+
+  def success
+  end
 
   def new
     @lead = Lead.new
@@ -62,6 +76,9 @@ class LeadsController < ApplicationController
     else
       render :new
     end
+  rescue REXML::ParseException
+    flash[:alert] = "Ocorreu um erro no upload. Favor carregar sua nota em formato XML."
+    render :new
   end
 
   private

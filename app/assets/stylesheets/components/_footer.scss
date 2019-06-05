@@ -1,4 +1,4 @@
-$footer-height: 120px;
+$footer-height: 130px;
 
 #footer {
   position: absolute;
@@ -12,6 +12,7 @@ $footer-height: 120px;
   align-items: center;
   justify-content: space-around;
   box-shadow: 0px -5px 5px 5px rgba(#4266FC, 0.2);
+  padding-top: 12px;
 }
 
 body {
@@ -43,4 +44,22 @@ a .social-button {
 a:hover .social-button{
   color: white;
     background-color: rgb(15, 15, 15);
+}
+
+.footer-copyright {
+  margin-top: 10px;
+  text-align: center;
+  p{
+    margin-bottom: 0;
+  }
+  a{
+    text-decoration: none !important;
+    color: white;
+    &:hover {
+      color: white !important;
+    }
+  }
+}
+.hortalab-icon{
+  width: 32px;
 }
