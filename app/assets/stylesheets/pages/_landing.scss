@@ -115,4 +115,13 @@ input {
   .invoice-wrapper {
   padding: 16px 16px 70px 16px;
   }
+
+  .lead-info {
+    flex-direction: column;
+  }
+
+  .lead-span {
+    display: block;
+    margin: 8px auto;
+  }
 }
