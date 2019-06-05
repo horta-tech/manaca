@@ -1,0 +1,118 @@
+.hidden {
+  display: none !important;
+}
+
+#upload_nota_button {
+  padding: 24px;
+  color: $manaca-purple;
+  background-color: white;
+  border: none;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+input::placeholder {
+  color: $manaca-purple !important;
+  opacity: 0.8 !important;
+}
+
+.manaca-btn {
+  padding: 8px 32px;
+  background-color: $manaca-purple;
+  color: white;
+  border: none;
+  text-align: center;
+  border-radius: 4px ;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: normal;
+  :hover {
+    color: white;
+    text-decoration: none !important;
+  }
+}
+
+.hashtags-promo {
+  color: #EE76FE;
+  margin: 12px;
+  line-height: 1.3em;
+}
+
+.secondary-title {
+  color: $manaca-purple;
+  margin-bottom: 32px;
+
+}
+
+.invoice-wrapper {
+  background-color: rgb(220, 220, 220);
+  border-radius: 8px;
+  padding: 16px 40px 70px 40px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.invoice-wrapper-logo {
+  position: absolute;
+  bottom: -45px;
+  left: calc(50% - 50px);
+  width: 100px;
+}
+
+.parceiros {
+  align-items: center !important;
+  text-align: center;
+}
+
+.logo-parceiros {
+  height: 100%;
+  max-height: 100px;
+  padding: 16px;
+  margin-bottom: 16px;
+
+}
+
+.error-message {
+  display: block;
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 80%;
+  color: #EE5F5B;
+}
+
+input {
+  margin: 0 auto;
+  max-width: 340px;
+}
+
+.lead-span {
+  display: inline-block;
+  background-color: white;
+  width: 200px;
+  border-radius: 4px;
+  color: $manaca-purple;
+  margin-left: 24px;
+  align-self: flex-end;
+}
+
+.lead-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.lead-text {
+  flex-grow: 1;
+  text-align: left;
+}
+
+
+
+@media (max-width: 576px) {
+  .invoice-wrapper {
+  padding: 16px 16px 70px 16px;
+  }
+}

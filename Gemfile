@@ -21,6 +21,8 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog-aws'
 
+gem 'nokogiri'
+
 group :development do
   gem 'web-console', '>= 3.3.0'
 end

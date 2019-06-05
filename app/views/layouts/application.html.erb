@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hortatech Template</title>
+    <title>Manacá</title>
     <link rel="icon" href="<%= image_path 'favicon.png' %>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="UTF-8">
@@ -14,7 +14,33 @@
   <body>
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
-    <%= yield %>
+    <div class="container">
+      <div class="col-12 offset-sm-3 col-sm-6">
+        <h3 class="hashtags-promo text-center">#semIOF #semTAC #semTED</h3>
+
+        <div class="invoice-wrapper">
+          <%= image_tag 'manaca-icon.png', class: 'invoice-wrapper-logo' %>
+          <%= yield %>
+        </div>
+
+      </div>
+        <h2 class="secondary-title text-center">Parceiros</h2>
+        <div class="row parceiros">
+          <div class="col-12 col-sm-6 col-md-3">
+            <%= image_tag "itau.svg", class: 'logo-parceiros' %>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3">
+            <%= image_tag "serasa-experian-logo.png", class: 'logo-parceiros' %>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3">
+            <%= image_tag "crdc_horiz-01.jpg", class: 'logo-parceiros' %>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3">
+            <%= image_tag "logotipo.png", class: 'logo-parceiros' %>
+          </div>
+        </div>
+    </div>
+
     <%= render 'shared/footer' %>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>

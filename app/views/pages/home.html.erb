@@ -1,2 +1,13 @@
 <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
+
+
+<%= simple_form_for @lead do |lead| %>
+  <%= lead.input :email %>
+  <%= lead.input :cnpj %>
+  <%= lead.input :invoice_amount %>
+  <%= lead.input :invoice_due %>
+  <%= lead.input :name %>
+  <%= lead.input :phone %>
+  <%= lead.input :address %>
+<% end %>

@@ -1,0 +1,22 @@
+<h2></h2>
+<div class="lead-info">
+  <span class="lead-text">Valor total da nota:</span><span class="lead-span">R$<%= number_with_precision(@lead.invoice_amount, precision: 2).to_s.gsub('.',',') %></span>
+</div>
+<br>
+<div class="lead-info">
+  <span class="lead-text">Sua taxa:</span><span class="lead-span"><%= @lead.variable_fee %>%</span>
+</div>
+<div class="lead-info">
+  <span class="lead-text">Deságio:</span><span class="lead-span">R$<%= number_with_precision(@lead.discount, precision: 2).to_s.gsub('.',',') %></span>
+</div>
+<div class="lead-info">
+  <span class="lead-text">Tarifa Borderô:</span><span class="lead-span">R$50,00</span>
+</div>
+<br>
+<div class="lead-info">
+  <span class="lead-text">Você recebe hoje:</span><span class="lead-span">R$<%= number_with_precision(@lead.receivable, precision: 2).to_s.gsub('.',',') %></span>
+</div>
+
+<%= link_to lead_contato_path(@lead) do %>
+  <button class="manaca-btn" style="margin-top: 16px;">Adiantar recebíveis!</button>
+<% end %>

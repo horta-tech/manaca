@@ -1,0 +1,21 @@
+<%= simple_form_for @lead do |lead| %>
+  <button type="button" id="upload_nota_button" class="text-center" onclick="document.getElementById('lead_invoice').click();" >UPLOAD NOTA FISCAL
+  </button>
+  <div id="nota_errors"></div>
+  <%= lead.input :invoice, input_html: {class: "hidden"}, label: false %>
+  <%= lead.input :invoice_cache, as: :hidden %>
+  <%= lead.input :email, label: false, placeholder: "e-mail" %>
+  <%= lead.submit "Calcular!", class: 'manaca-btn hidden', id: 'lead_submit' %>
+  <button class="manaca-btn" id="calculate_button">Calcular!</button>
+<% end %>
+<svg id="loading" class="manaca-loading hidden" version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"width="100px" height="60px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;"xml:space="preserve">
+  <path fill="#4166FC" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
+    <animateTransform attributeType="xml"
+      attributeName="transform"
+      type="rotate"
+      from="0 25 25"
+      to="360 25 25"
+      dur="0.9s"
+      repeatCount="indefinite"/>
+  </path>
+</svg>
