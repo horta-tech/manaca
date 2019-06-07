@@ -83,6 +83,10 @@ input::placeholder {
   color: #EE5F5B;
 }
 
+#invoice_filename {
+  color: rgba(120, 120, 120, 1);
+}
+
 input {
   margin: 0 auto;
   max-width: 340px;
@@ -109,8 +113,23 @@ input {
   text-align: left;
 }
 
+#parceiros {
+  margin-bottom: 30px;
+}
 
+#banner {
+  margin-bottom: 30px;
+}
 
+.testimonial-wrapper {
+  color: rgba(120, 120, 120, 1);
+  margin-bottom: 60px;
+}
+
+.testimonial-author {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 @media (max-width: 576px) {
   .invoice-wrapper {
   padding: 16px 16px 70px 16px;

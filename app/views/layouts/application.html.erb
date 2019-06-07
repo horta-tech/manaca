@@ -24,6 +24,19 @@
         </div>
 
       </div>
+    </div>
+
+    <section id="banner">
+      <div class="banner">
+        <div class="banner-content">
+          <h4 class="banner-text">Antecipe já!</h4>
+          <h4 class="banner-text">Rápido, fácil e transparente.</h4>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+
+      <section id="parceiros">
         <h2 class="secondary-title text-center">Parceiros</h2>
         <div class="row parceiros">
           <div class="col-12 col-sm-6 col-md-3">
@@ -39,8 +52,35 @@
             <%= image_tag "logotipo.png", class: 'logo-parceiros' %>
           </div>
         </div>
-    </div>
+      </section>
 
+      <section id="depoimentos">
+        <h2 class="secondary-title text-center">Depoimentos</h2>
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="testimonial-wrapper">
+              <p class="testimonial-text">“Muito impressionado com a transparência e simplicidade. Sabia exatamente qual era o custo e quanto ia receber. Recomendo”</p>
+              <p class="testimonial-author">Marcos R.</p>
+              <p class="author-position">Empreendedor - Indústria Metalúrgica</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="testimonial-wrapper">
+              <p class="testimonial-text">“O customer service da Manacá tem sido excelente e facilitou o meu dia dia. A combinação de tecnologia e pessoas faz com que a antecipação seja bastante rápida”</p>
+              <p class="testimonial-author">Pamela C.</p>
+              <p class="author-position">Gerente Financeira - Alimentos e Bebidas</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="testimonial-wrapper">
+              <p class="testimonial-text">“A melhor taxa que encontrei”</p>
+              <p class="testimonial-author">Murilo A.</p>
+              <p class="author-position">Diretor Financeiro - Tecnologia da Informação</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <%= render 'shared/footer' %>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>

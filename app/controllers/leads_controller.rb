@@ -45,7 +45,10 @@ class LeadsController < ApplicationController
 
     duplicates = invoice["nfeProc"]["NFe"]["infNFe"]["cobr"]["dup"]
 
-    variable_fee_percentage = rand(2.8..3.2).round(2)
+    variable_fee_percentage = 3.2
+    # Calculo da taxa váriavel através dos últimos dígitos do CNPJ
+    # Sempre será um número entre 0 e 0.4
+    variable_fee_percentage -= ((@lead.cnpj[-2..-1].to_f/100.0)*0.4).round(2) if @lead.cnpj
     fixed_fee = 50
 
     total_discount = 0

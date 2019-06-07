@@ -23,3 +23,15 @@ let calculateButton = document.getElementById('calculate_button')
 if (calculateButton) {
   calculateButton.addEventListener('click', load_and_click)
 }
+
+const setFilename = (event) => {
+  let fileArray = event.target.value.split('\\');
+  document.getElementById('invoice_filename').innerHTML = fileArray[fileArray.length - 1];
+}
+
+let fileInput = document.getElementById('lead_invoice')
+fileInput.addEventListener('change', setFilename)
+
+if (fileInput) {
+  setFilename();
+}
