@@ -1,5 +1,5 @@
 .navbar {
-  height: 120px;
+  height: 110px;
   position: fixed;
   width: 100vw;
   padding: 0 40px;
@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 5px 5px 5px 5px rgba(200, 200, 200, 0.1);
+  box-shadow: 5px 5px 10px 5px rgba(200, 200, 200, 0.3);
   a {
     text-decoration: none;
     font-size: 0.8em;
@@ -22,7 +22,7 @@
 }
 
 .nav-wrapper {
-  height: 120px;
+  height: 110px;
   width: 100vw;
 }
 
@@ -58,7 +58,7 @@
   }
 
 .logo {
-  height: 70px;
+  height: 47px;
   margin-right: 16px;
 }
 

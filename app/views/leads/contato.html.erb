@@ -1,6 +1,7 @@
-<h3 class="wrapper-title">Preencha para que possamos entrar em contato!</h3>
+<h3 class="wrapper-title">Quer saber mais?</h3>
+<p class="wrapper-title">Entramos em contato com você!</p>
 <%= simple_form_for @lead do |lead| %>
   <%= lead.input :name, label: false, placeholder: "Nome" %>
   <%= lead.input :phone, label: false, placeholder: "Telefone" %>
-  <%= lead.submit "Enviar", class: 'manaca-btn', id: 'lead_update' %>
+  <%= lead.submit "Antecipe já!", class: 'manaca-btn', id: 'lead_update' %>
 <% end %>

@@ -34,6 +34,18 @@ input::placeholder {
   }
 }
 
+.hashtags-box {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-between;
+  // max-width: 350px;
+}
+
+#hashtags {
+  margin-bottom: 30px;
+}
+
 .hashtags-promo {
   color: #EE76FE;
   margin: 12px;
@@ -42,7 +54,7 @@ input::placeholder {
 
 .secondary-title {
   color: $manaca-purple;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 
 }
 
@@ -52,7 +64,8 @@ input::placeholder {
   padding: 16px 40px 70px 40px;
   position: relative;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
+  margin-top: 32px;
 }
 
 .invoice-wrapper-logo {
@@ -114,7 +127,14 @@ input {
 }
 
 #parceiros {
-  margin-bottom: 30px;
+  margin-bottom: 45px;
+
+  .secondary-title {
+  color: $manaca-purple;
+  margin-bottom: 8px !important;
+
+}
+
 }
 
 #banner {
@@ -124,15 +144,26 @@ input {
 .testimonial-wrapper {
   color: rgba(120, 120, 120, 1);
   margin-bottom: 60px;
+  font-size: 17px;
 }
 
 .testimonial-author {
   margin-bottom: 0;
   padding-bottom: 0;
 }
+
+.wrapper-title {
+  font-size: 18px;
+  color: $manaca-purple;
+}
+
+.invoice-wrapper-logo:hover {
+}
+
 @media (max-width: 576px) {
   .invoice-wrapper {
   padding: 16px 16px 70px 16px;
+  margin-bottom: 50px;
   }
 
   .lead-info {
@@ -142,5 +173,16 @@ input {
   .lead-span {
     display: block;
     margin: 8px auto;
+  }
+
+  .hashtags-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #parceiros {
+    .secondary-title {
+      margin-bottom: 30px !important;
+    }
   }
 }

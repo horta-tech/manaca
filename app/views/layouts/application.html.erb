@@ -14,18 +14,6 @@
   <body>
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
-    <div class="container">
-      <div class="col-12 offset-sm-3 col-sm-6">
-        <h3 class="hashtags-promo text-center">#semIOF #semTAC #semTED</h3>
-
-        <div class="invoice-wrapper">
-          <%= image_tag 'manaca-icon.png', class: 'invoice-wrapper-logo' %>
-          <%= yield %>
-        </div>
-
-      </div>
-    </div>
-
     <section id="banner">
       <div class="banner">
         <div class="banner-content">
@@ -34,6 +22,32 @@
         </div>
       </div>
     </section>
+    <div class="container">
+      <div class="col-12 offset-sm-3 col-sm-6">
+        <div class="invoice-wrapper">
+          <%= image_tag 'manaca-icon.png', class: 'invoice-wrapper-logo' %>
+          <%= yield %>
+        </div>
+
+        <section id="hashtags">
+          <div class="hashtags-box">
+            <span class="hashtags-promo">#AGenteConfiaAntes</span>
+            <span class="hashtags-promo">#AntecipeSeuSucesso</span>
+          </div>
+          <div class="hashtags-box">
+            <span class="hashtags-promo">#semTAC</span>
+            <span class="hashtags-promo">#semTED</span>
+            <span class="hashtags-promo">#semIOF</span>
+          </div>
+          <div class="hashtags-box">
+            <span class="hashtags-promo">#ZeroTaxaBoleto</span>
+            <span class="hashtags-promo">#ZeroTaxaConsultaSerasa</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <div class="container">
 
       <section id="parceiros">
