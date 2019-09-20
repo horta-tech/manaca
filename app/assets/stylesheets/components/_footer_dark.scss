@@ -22,6 +22,7 @@ footer .logo  {
   background-image: none;
   padding-top: 20px;
   padding-bottom: 20px;
+  position: relative;
 }
 
 .footer-dark h3 {
@@ -82,7 +83,7 @@ footer .logo  {
   color: #ced4da !important;
   opacity: 1;
   width: 80%;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .footer-dark .item.social {
@@ -129,10 +130,99 @@ footer .logo  {
   color: #fff;
 }
 
-  .divisorfooter {
+.divisorfooter .left {
+  margin-right: 0px;
+  border-right: 0px;
+  padding-right: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.divisorfooter {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.divisorfooter .left {
+  margin-right: 30px;
+  border-right: 1px #fff solid;
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.duvidas .intro {
+  background-color: #162d5a;
+  background-size: cover;
+  height: auto;
+  display: flex;
+  align-items: flex-end;
+  background-position: center;
+  padding-bottom: 0px;
+  padding-top: 60px;
+  margin-bottom: 38px;
+}
+
+.duvidas .btn-secondary {
+  border-radius: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+    font-size: 15px;
+    margin-bottom: 20px !important;
+    /*box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px;*/
+    color: #fff;
+    background-color: #353cff;
+}
+
+.duvidas .card-title {
+  color: #fff;
+  font-weight: 600;
+  font-family: 'Avenir', sans-serif;
+  font-size: 20px;
+  margin-bottom: 15px !important;
+  margin-top: 0px !important;
+  margin-right: 0px !important;
+  padding-right: 0px !important;
+  text-align: center !important;
+
+}
+
+.duvidas strong {
+  color: #ffffff;
+}
+
+.duvidas .row {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.duvidas h4 {
+  text-align: center;
+}
+
+.duvidas .pt-5, .duvidas .py-5 {
+  padding-top: 0px !important;
+}
+
+@media (max-width: 767px) {
+   .symbol {
+      display: none;
+   }
+   .footer-logo {
+    width: 80%;
+   }
+   .row .item {
+    margin: 0 45px;
+   }
+    .divisorfooter {
     flex-direction: column;
   }
-
   .divisorfooter .left {
     margin-right: 0px;
     border-right: 0px;
@@ -141,3 +231,12 @@ footer .logo  {
     align-items: center;
     justify-content: center;
   }
+  .right .btn {
+    width: 80%;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

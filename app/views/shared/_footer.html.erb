@@ -1,46 +1,79 @@
 <div class="footer-dark">
-    <footer>
+  <!-- SESSÃO DE DUVIDAS -->
+  <section class="duvidas">
+    <section class="intro">
         <div class="container">
             <div class="row">
-
-
-             <div class="col-sm-3 col-md-3 item">
-           <div class="logo">
-            <img src="/assets/manaca-logo-horizontal-b.png" />
-            </div>
-            <div class="item social">
-                <a href="https://www.facebook.com/manacacapital/" target="_blank"><i class="icon ion-social-facebook"></i></a>
-                <a href="https://www.instagram.com/manacacapital/" target="_blank"><i class="icon ion-social-instagram"></i></a>
-                <a href="https://www.linkedin.com/company/manacacapital/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-            </div>
-
-                <div class="col-sm-3 col-md-3 item">
-                    <h3>ANTECIPAR</h3>
-                    <ul>
-                        <li><a href="/HowWorks">Como Funciona</a></li>
-                        <li><a href="/CommonQuestions">Perguntas Frequentes</a></li>
-                        <li><a href="/Simulator">Simule uma operação</a></li>
-                    </ul>
+              <div class="divisorfooter wow fadeInLeft">
+                <div class="left">
+                  <div class="content">
+                    <h4 class="text-left card-title mb-2 mt-5">Ficou alguma dúvida?</h4>
+                    <h5  style="color: #6687ff;font-size: 18px; font-family: 'Avenir Next Light';">Somos digitais, mas somos humanos.</h5>
+                  </div>
                 </div>
-                <div class="col-sm-3 col-md-3 item">
-                    <h3>SOBRE A MANACÁ</h3>
-                    <ul>
-                        <li><a href="/about">Por quê escolher <br>a manacá?</a></li>
-                         <li><a href="/careers">Carreiras</a></li>
-                    </ul>
+                <div class="right">
+                  <a class="btn btn-secondary text-nowrap pl-4 pr-4 mb-5" role="button" href="https://www.manacacapital.com.br/contact">Fale com um especialista</a>
+                  <h4 style="font-weight: 200;color: rgba(125,130,133,0.77);font-size: 16px; font-family: 'Avenir Next Light';">
+                  <strong>11 3854-7888 | </strong> <strong>contato@manaca.digital</strong><br></h4>
                 </div>
-                <div class="col-md-3 item text">
-                    <h3>MANACÁ CAPITAL</h3>
-                    <p style="color: #f6f6f6;">A Manacá está revolucionando a antecipação de recebíveis oferecendo a taxa mais baixa do mercado com o máximo de transparência</p>
-                </div>
+              </div>
             </div>
-            <p class="copyright" style="color: #f6f6f6;">manacá © 2019</p>
         </div>
-        <div class="footer-copyright">
-          <p>Desenvolvido por <a href="http://www.hortalab.com/" target="_blank">HortaTech <%= image_tag "horta-favicon.png", class: "hortalab-icon" %></a> <span style="font-size: 0.6em;"> @2019</span></p>
-        </div>
-    </footer>
+    </section>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+      <div class="container">
+          <div class="row">
+            <div class="col-sm-3 col-md-3 item">
+              <div class="">
+                <img src="/assets/manaca-logo-horizontal-b.png", class="footer-logo" />
+              </div>
+
+              <div class=" d-flex justify-content-around">
+                <%= link_to "https://www.facebook.com/manacacapital/" do %>
+                  <%= image_tag 'imagens/facebook-logo-branco.svg', class: "footer-social-icon" %>
+                <% end %>
+
+                <%= link_to "https://www.instagram.com/manacacapital/" do %>
+                  <%= image_tag 'imagens/instagram-logo-branco.svg', class: "footer-social-icon" %>
+                <% end %>
+
+                <%= link_to "https://www.linkedin.com/company/manacacapital/" do %>
+                  <%= image_tag 'imagens/linkedin-logo-branco.svg', class: "footer-social-icon" %>
+                <% end %>
+              </div>
+            </div>
+
+            <div class="col-sm-3 col-md-3 item">
+              <h3>ANTECIPAR</h3>
+              <ul>
+                <li><a href="https://www.manacacapital.com.br/HowWorks">Como Funciona</a></li>
+                <li><a href="https://www.manacacapital.com.br/CommonQuestions">Perguntas Frequentes</a></li>
+                <li><a href="https://www.manacacapital.com.br/Simulator">Simule uma operação</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 col-md-3 item">
+              <h3>SOBRE A MANACÁ</h3>
+              <ul>
+                <li><a href="https://www.manacacapital.com.br/about">Por quê escolher <br>a manacá?</a></li>
+                <li><a href="https://www.manacacapital.com.br/careers">Carreiras</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 item footer-text">
+              <h3>MANACÁ CAPITAL</h3>
+              <p style="color: #f6f6f6;">A Manacá está revolucionando a antecipação de recebíveis oferecendo a taxa mais baixa do mercado com o máximo de transparência</p>
+            </div>
+          </div>
+
+          <p class="copyright" style="color: #f6f6f6;">manacá © 2019</p>
+      </div>
+      <div class="footer-copyright">
+        <p>Desenvolvido por <a href="http://www.hortalab.com/" target="_blank">HortaTech <%= image_tag "horta-favicon.png", class: "hortalab-icon" %></a> <span style="font-size: 0.6em;"> @2019</span></p>
+      </div>
+    <%= image_tag 'footersymbol.png', class: "symbol " %>
+  </footer>
 </div>
 
 

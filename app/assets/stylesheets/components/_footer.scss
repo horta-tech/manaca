@@ -33,7 +33,9 @@ body {
 }
 
 .footer-logo {
-  height: 40px;
+  // height: 40px;
+  width: 100%;
+  margin-bottom: 24px;
 }
 
 
@@ -50,6 +52,7 @@ a:hover .social-button{
 .footer-copyright {
   margin-top: 10px;
   text-align: center;
+  color: white !important;
   p{
     margin-bottom: 0;
   }
@@ -58,9 +61,35 @@ a:hover .social-button{
     color: white;
     &:hover {
       color: white !important;
+      opacity: 0.8;
     }
   }
 }
 .hortalab-icon{
   width: 32px;
+}
+
+.footer-social-icon {
+  width: 36px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.symbol {
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 300;
+}
+
+.footer-text {
+
+  z-index: 400;
+  font-weight: 100;
+}
+
+.item {
+  font-size: 12px;
+  font-family: 'Avenir';
 }
