@@ -6,9 +6,29 @@
 
 
 <div class="nav-wrapper" id="nav-wrapper">
-  <div class="navbar" id="navbar">
-    <%= link_to root_path, class: "nav-item-logo" do %>
-      <%= image_tag 'manaca-logo-horizontal@2x.png', class: "logo" %>
-    <% end %>
+  <div class="navbar d-flex justify-content-between" id="navbar">
+    <div>
+      <%= link_to root_path, class: "d-block d-sm-none nav-item-logo" do %>
+        <%= image_tag 'manaca-icon.png', class: "logo mx-0" %>
+      <% end %>
+      <%= link_to root_path, class: "d-none d-sm-block nav-item-logo" do %>
+        <%= image_tag 'manaca-logo-horizontal@2x.png', class: "logo" %>
+      <% end %>
+    </div>
+    <div class="social">
+      <div class="social-links">
+        <div class="m-2">
+          <%= link_to "https://www.facebook.com/manacacapital/" do %>
+            <%= image_tag 'imagens/facebook-logo-in-circular-button-outlined-social-symbol.svg', class: "social-icon" %>
+          <% end %>
+          <%= link_to "https://www.instagram.com/manacacapital/" do %>
+            <%= image_tag 'imagens/instagram.svg', class: "social-icon" %>
+          <% end %>
+          <%= link_to "https://www.linkedin.com/company/manacacapital/" do %>
+            <%= image_tag 'imagens/social-linkedin-circular-button.svg', class: "social-icon" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
