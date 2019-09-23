@@ -34,17 +34,31 @@ input::placeholder {
   }
 }
 
+
 .hashtags-box {
   display: flex;
-  flex-direction: row;
-  align-items:center;
-  justify-content: space-between;
-  // max-width: 350px;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  .hashtags {
+    font-family: 'Avenir';
+    color: #2c4687;
+    width: 0 auto;
+    border-bottom: 3px solid $manaca-purple;
+    margin-bottom: 30px;
+  }
+  p {
+    font-family: 'Avenir';
+    color: #585a5e;
+    max-width: 635px;
+    padding: 20px;
+  }
+  h4 {
+    color: #2c4687;
+  }
 }
 
-#hashtags {
-  margin-bottom: 30px;
-}
+
 
 .hashtags-promo {
   color: #EE76FE;
@@ -66,6 +80,7 @@ input::placeholder {
   text-align: center;
   margin-bottom: 20px;
   margin-top: 32px;
+  transition: 0.5s;
 }
 
 .invoice-wrapper-logo {
@@ -184,5 +199,100 @@ input {
     .secondary-title {
       margin-bottom: 30px !important;
     }
+  }
+}
+
+.card-grid {
+  font-family: 'Avenir';
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 16px;
+  color: #585a5e;
+
+  .card-image {
+    margin: 7px;
+    height: 56px;
+  }
+
+  h3 {
+  color: #162d5a;
+  font-family: 'Avenir';
+  font-weight: bold;
+  }
+  h4 {
+  font-family: 'Avenir';
+  }
+  .index {
+    color: $manaca-purple;
+  }
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+
+  .box-simulate {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border: 5px solid $manaca-purple;
+    padding: 25px;
+    min-height: 90px;
+
+    .click-btn {
+
+      color: white;
+      background-color: $manaca-purple;
+    }
+
+    h3 {
+      color: $manaca-purple;
+      font-family: 'Avenir';
+      font-weight: bold;
+      margin-top: 7px;
+      margin-right: 7px;
+      margin-bottom: 0px;
+    }
+
+    p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 240px;
+      height: 52px;
+      font-family: 'Avenir';
+      margin-bottom: 0 !important;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .box {
+    margin: 10px;
+  }
+  .box-simulate {
+    flex-direction: column;
+  }
+  .click-btn {
+    margin-top: 7px;
+  }
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 15px;
+
+  .info-cards {
+    display: flex;
+    justify-content: center;
+  }
+  .info-icon {
+    margin: 7px;
+    height: 56px;
   }
 }

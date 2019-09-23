@@ -1,4 +1,9 @@
+import { input_change } from "../components/input-data"
 import "bootstrap";
+
+input_change();
+
+
 
 
 const load_and_click = (event) => {
