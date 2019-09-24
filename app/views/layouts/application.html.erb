@@ -101,14 +101,77 @@
     <!-- INFOS -->
     <div id="infos" class="infos">
       <div class="info-title">
-        Fortaleça seu caixa e <spam>acelere seu conhecimento.</spam>
+        Fortaleça seu caixa e <br><spam class="manaca-color">acelere seu conhecimento.</spam>
       </div>
       <div class="info-cards">
-        <div class="card">
+        <div class="cards">
           <%= image_tag "imagens/clock.svg", class: "info-icon" %>
           <h4 class="subtitle">Comece em 5 minutos</h4>
           <p class="info-text">Cadastro aprovado em até 48 horas e dinheiro na conta em até duas horas após o envio da operação. Rápido para começar, rápido para antecipar.</p>
         </div>
+        <div class="cards">
+          <%= image_tag "imagens/percent.svg", class: "info-icon" %>
+          <h4 class="subtitle">Taxas atrativas a partir de 1.7%</h4>
+          <p class="info-text">Sem taxas escondidas. Não cobramos consultas aos bureaus de crédito. Não cobramos TED, DOC ou qualquer outra sigla, aqui você paga exatamente o que vê.</p>
+        </div>
+        <div class="cards">
+          <%= image_tag "imagens/security.svg", class: "info-icon" %>
+          <h4 class="subtitle">Transparência radical</h4>
+          <p class="info-text">Entenda exatamente quanto está pagando em cada operação e precifique melhor a venda dos seus produtos e serviços.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEES AND TAXES -->
+    <div class="fees">
+      <div class="fees-text">
+        <h4>Oferecemos <spam class="manaca-color">as melhores taxas.</spam></h4>
+        <p>Nossas taxas variam entre 1,75% e 3,50%, muito menos do que os 5% de desconto que geralmente as empresas oferecem para pagamento à vista. Conforme sua empresa cresce e evolui, seu custo com a Manacá diminui também. Excelentes empresas merecem excelentes taxas. Chega dessa história de que antecipação de recebíveis é um produto caro. Nossas taxas não são apenas competitivas, elas são as melhores.</p>
+      </div>
+      <div class="fees-graph">
+        <h5 class="manaca-color">Os competidores chegam a ser 2x mais caros.</h5>
+        <p>A Manacá não só não incorre em IOF ou Ad-valorem, como também oferece a taxa mais baixa do mercado.</p>
+      </div>
+    </div>
+
+
+    <!-- BENEFITS -->
+    <div class="benefits">
+      <div class="taxes-numbers">
+        <div class="subtitle">Taxa de antecipação</div>
+        <div class="numbers">1,75% a 3,5% a.m.</div>
+        <div class="subtitle">Consulta ao bureaux de crédito</div>
+        <div class="numbers">20 a 55 reais</div>
+        <div class="subtitle">TED e boleto</div>
+        <div class="numbers">11 e 3 reais, respectivamente</div>
+        <div class="subtitle">IOF, Ad-valorem, TAC, etc.</div>
+        <div class="numbers">Zero, nada, 0.</div>
+      </div>
+      <div class="taxes-infos">
+        <div class="taxes-subtitle">Prezamos pelo <spam class="manaca-color">máximo de transparência.</spam></div>
+        <div class="taxes-text">Oferecemos sempre transparência radical nas operações. Aqui você saberá exatamente quanto está pagando pela operação, e receberá exatamente aquilo que enxergar na tela. Sem taxas escondidas. Sem asteriscos. Sem letras miúdas. Nada. Não importa se você não sabe fazer as contas no detalhe de desconto de duplicatas, nós fazemos para você e te mostramos na vírgula, sempre.</div>
+      </div>
+    </div>
+
+    <!-- REVIEW -->
+    <div class="review">
+      <div class="review-icon">
+        <%= image_tag 'imagens/marker.svg', class: 'img' %>
+      </div>
+      <div class="review-text">Muito impressionado com a transparência e simplicidade. Sabia exatamente qual era o custo e quanto ia receber. Recomendo.</div>
+      <div class="divisor"></div>
+      <div class="review-autor">Marcos R., Empreendedor, <spam class="manaca-color">Indústria Metalúrgica</spam></div>
+    </div>
+
+    <!-- ANTECIPATION -->
+    <div class="antecipation">
+      <div class="antecipation-info">
+        <div class="ant-title">Antecipação de <spam class="manaca-color">recebíveis.</spam></div>
+        <div class="ant-text">Transforme suas vendas a prazo em vendas à vista. Oferecemos as taxas mais baratas do mercado com o máximo de transparência e comodidade.</div>
+        <div class="ant-button">COMECE JÁ</div>
+      </div>
+      <div class="ant-image">
+        <%= image_tag "imagens/banking.png", class: 'img' %>
       </div>
     </div>
     <%= render 'shared/footer' %>

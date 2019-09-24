@@ -281,18 +281,263 @@ input {
   }
 }
 
+// INFOS
 .infos {
+  background-color: #f7f8fc;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 15px;
+  margin-top: 60px;
+  align-items: center;
+  font-family:  'Avenir';
+
+  .info-title {
+    text-align: center;
+    font-family:  'Avenir';
+    font-weight: bold;
+    font-size: 34px;
+    margin: 16px;
+    width: 0 auto;
+    max-width: 420px;
+  }
+
+  h4 {
+    color: $manaca-purple;
+  }
+
+  .cards {
+    align-items: start;
+    margin: 7px 15px;
+  }
 
   .info-cards {
     display: flex;
     justify-content: center;
+    margin: 0 15px;
+  }
+  .subtitle {
+    font-family:  'Avenir';
+    font-size: 21px;
   }
   .info-icon {
     margin: 7px;
-    height: 56px;
+    margin-bottom: 20px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 767px) {
+  .info-cards {
+    flex-direction: column;
+  }
+  .info-title {
+    font-size: 28px;
+  }
+}
+
+.manaca-color {
+  color: $manaca-purple;
+}
+
+
+// FEES AND TAXES
+.fees {
+  display: flex;
+  justify-content: center;
+  margin: 50px 30px;
+  font-family:  'Avenir' !important;
+  color: #162D5A;
+
+  .fees-text {
+    width: 970px;
+    padding-right: 25px;
+
+    h4 {
+      font-family:  'Avenir';
+      font-weight: bold;
+      font-size: 26px;
+    }
+    p {
+      text-align: justify;
+    }
+  }
+  .fees-graph {
+    padding: 15px;
+    box-shadow: 1px 1px 15px;
+
+    h5 {
+      font-family:  'Avenir';
+      font-size: 17px;
+    }
+    p {
+      text-align: justify;
+      font-size: 15px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .fees {
+    flex-direction: column;
+
+    .fees-text {
+      width: auto;
+      padding-right: 0;
+      text-align: center;
+
+    }
+    .fees-graph {
+      margin-top: 25px;
+    }
+  }
+
+}
+
+// BENEFITS
+
+.benefits {
+  display: flex;
+  justify-content: space-evenly;
+  font-family:  'Avenir' !important;
+  margin: 0 15px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+
+  .taxes-numbers {
+    border: 5px solid $manaca-purple;
+    padding: 12px;
+
+    .subtitle {
+      color: #585a5e;
+    }
+    .numbers {
+      color: $manaca-purple;
+    }
+  }
+
+  .taxes-infos {
+    padding: 12px;
+    width: 530px;
+
+    .taxes-subtitle {
+      color: #162D5A;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+    .taxes-text {
+      text-align: justify;
+    }
+  }
+
+}
+
+@media (max-width: 767px) {
+  .benefits {
+    flex-direction: column;
+
+    .taxes-numbers {
+      margin: 0 auto;
+      width: 300px;
+    }
+
+    .taxes-infos {
+      margin: 0 auto;
+      margin-top: 30px;
+      width: 300px;
+    }
+  }
+
+}
+
+// REVIEW
+
+.review {
+  text-align: center;
+  width: 352px;
+  margin: 0 auto;
+  font-family:  'Avenir';
+
+
+  .review-icon {
+    width: 60px;
+    margin: 0 auto;
+    border: 1px #3540ff solid;
+    border-radius: 50px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .review-text {
+    color: #162d5a;
+    padding: 20px;
+  }
+  .divisor{
+    width: 30px;
+    height: 2px;
+    background: #0339de;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .review-autor {
+    padding: 15px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .review{
+    width: 300px;
+  }
+}
+
+// ANTECIPATION
+.antecipation {
+  width: auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  margin-top: 62px;
+  margin-bottom: 40px;
+
+  .antecipation-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 300px;
+    font-family: 'Avenir';
+
+    .ant-title {
+      color: #162d5a;
+      font-weight: bold;
+      font-size: 28px;
+    }
+    .ant-text {
+      text-align: justify;
+      margin: 25px 0;
+    }
+    .ant-button {
+      width: 57%;
+      text-align: center;
+      border: 1px $manaca-purple solid;
+      color: $manaca-purple;
+      padding: 10px 10px 5px 10px;
+    }
+  }
+
+  .ant-image {
+    .img {
+      width: 300px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .antecipation {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ant-image {
+    margin-top: 40px;
   }
 }
