@@ -5,13 +5,12 @@ input_change();
 
 
 
-
 const load_and_click = (event) => {
   event.preventDefault();
   if (document.getElementById('lead_invoice').value !== '') {
     let loading = document.getElementById('loading');
-    calculateButton.classList.add('hidden')
-    loading.classList.remove('hidden')
+    calculateButton.classList.add('hidden');
+    loading.classList.remove('hidden');
     setTimeout(() => {
       leadSubmit.click();
     }, 3000);

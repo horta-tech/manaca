@@ -43,9 +43,9 @@ input::placeholder {
   .hashtags {
     font-family: 'Avenir';
     color: #2c4687;
-    width: 0 auto;
     border-bottom: 3px solid $manaca-purple;
     margin-bottom: 30px;
+    margin-top: 52px;
   }
   p {
     font-family: 'Avenir';
@@ -243,7 +243,7 @@ input {
     min-height: 90px;
 
     .click-btn {
-
+      cursor: pointer;
       color: white;
       background-color: $manaca-purple;
     }
@@ -517,6 +517,7 @@ input {
       margin: 25px 0;
     }
     .ant-button {
+      cursor: pointer;
       width: 57%;
       text-align: center;
       border: 1px $manaca-purple solid;
