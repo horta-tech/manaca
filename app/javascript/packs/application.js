@@ -3,13 +3,14 @@ import "bootstrap";
 
 input_change();
 
-
+const simulateField = document.getElementById('simulate');
 const leadInfo = document.getElementById("lead-info");
 const wrapper = document.getElementById("wrapper");
 const success = document.getElementById("success");
 if (leadInfo || wrapper || success) {
   const inputField = document.getElementById('input-data');
   inputField.classList.remove('hidden');
+  simulateField.classList.add('hidden');
   inputField.scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 
