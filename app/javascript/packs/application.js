@@ -4,6 +4,12 @@ import "bootstrap";
 input_change();
 
 
+const leadInfo = document.getElementById("lead-info");
+if (leadInfo) {
+  const inputField = document.getElementById('input-data');
+  inputField.classList.remove('hidden');
+  inputField.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
 
 const load_and_click = (event) => {
   event.preventDefault();
@@ -34,7 +40,9 @@ const setFilename = (event) => {
 }
 
 let fileInput = document.getElementById('lead_invoice')
-fileInput.addEventListener('change', setFilename)
+if (fileInput) {
+  fileInput.addEventListener('change', setFilename)
+}
 
 if (fileInput) {
   setFilename();
