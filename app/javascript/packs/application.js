@@ -5,7 +5,9 @@ input_change();
 
 
 const leadInfo = document.getElementById("lead-info");
-if (leadInfo) {
+const wrapper = document.getElementById("wrapper");
+const success = document.getElementById("success");
+if (leadInfo || wrapper || success) {
   const inputField = document.getElementById('input-data');
   inputField.classList.remove('hidden');
   inputField.scrollIntoView({ behavior: 'smooth', block: 'center' });
