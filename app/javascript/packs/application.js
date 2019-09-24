@@ -35,8 +35,10 @@ if (calculateButton) {
 }
 
 const setFilename = (event) => {
-  let fileArray = event.target.value.split('\\');
-  document.getElementById('invoice_filename').innerHTML = fileArray[fileArray.length - 1];
+  if (event) {
+    let fileArray = event.target.value.split('\\');
+    document.getElementById('invoice_filename').innerHTML = fileArray[fileArray.length - 1];
+  }
 }
 
 let fileInput = document.getElementById('lead_invoice')
