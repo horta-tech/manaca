@@ -200,7 +200,7 @@ input {
 @media (max-width: 576px) {
   .invoice-wrapper {
   padding: 16px 16px 70px 16px;
-  margin-bottom: 50px;
+  margin-bottom: 105px;
   }
 
   .lead-info {
@@ -275,7 +275,7 @@ input {
     text-align: center;
     align-items: center;
     border: 6px solid $manaca-purple;
-    padding: 45px 76px;
+    padding: 45px 70px;
     min-height: 90px;
 
     .click-btn {
@@ -337,7 +337,7 @@ input {
     text-align: center;
     font-family:  'Avenir';
     font-weight: bold;
-    font-size: 34px;
+    font-size: 32px;
     margin: 32px;
     // width: 0 auto;
     max-width: 420px;
@@ -382,7 +382,8 @@ input {
     align-items: center;
   }
   .info-title {
-    font-size: 28px;
+    text-align: start !important;
+    font-size: 28px !important;
   }
 }
 
@@ -394,15 +395,14 @@ input {
 // FEES AND TAXES
 .fees {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   margin: 100px 30px;
   font-family:  'Avenir' !important;
   color: #162D5A;
   align-items: center;
 
   .fees-text {
-    width: 970px;
-    margin-left: 85px;
+    width: 550px;
     padding: 45px 0;
     padding-right: 25px;
 
@@ -417,16 +417,16 @@ input {
   }
 
   .fees-graph {
+    max-width: 556px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 48px 18px;
-    box-shadow: 1px 1px 20px 0px rgba(0,0,0, 0.1);
+    box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    margin: 0 85px;
     height: fit-content;
-    margin: 0 85px 0 36px;
+    margin-bottom: 36px;
 
     h5 {
       font-family:  'Avenir';
@@ -491,8 +491,9 @@ input {
       padding-right: 0;
       text-align: center;
       margin: 0 auto;
-
+      text-align-last: center;
     }
+
     .fees-graph {
       margin: 0;
       margin-top: 25px;
@@ -568,6 +569,15 @@ input {
 @media (max-width: 767px) {
   .benefits {
     flex-direction: column;
+
+    .taxes-infos {
+      text-align: center;
+
+      .taxes-text{
+        text-align: justify;
+        text-align-last: center;
+      }
+    }
 
     .taxes-numbers {
       margin: 0 auto;
