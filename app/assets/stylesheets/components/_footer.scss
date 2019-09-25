@@ -26,6 +26,17 @@ body {
   padding-right: 80px;
 }
 
+
+@media (max-width: 1023px) {
+  .footer-social {
+    padding-right: 53px;
+
+    .footer-social-icon {
+      width: 30px;
+    }
+  }
+}
+
 @media (max-width: 767px) {
   .footer-social {
     padding-right: 0;
