@@ -14,88 +14,165 @@
   <body>
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
-    <section id="banner">
-      <div class="banner">
-        <div class="banner-content">
-          <h4 class="banner-text">Antecipe já!</h4>
-          <h4 class="banner-text">Rápido, fácil e transparente.</h4>
+
+    <!-- SIMULATE SECTION -->
+    <section id="simulate">
+      <div class="simulate ">
+        <div class="simulate-card">
+          <h1><spam style="color: #2c4687">Simule uma </spam>antecipação.</h1>
+        </div>
+        <div id="simulate-card" class="simulate-card card-border">
+          <%= image_tag "imagens/pencil.png", class: 'pencil' %>
+          <p>Clique aqui para<br> inicar a simulação</p>
         </div>
       </div>
     </section>
+
+    <!-- BANNER SECTION -->
+    <section id="banner">
+      <div class="banner">
+        <div class="banner-content">
+          <h4 class="banner-text">Antecipe seu sucesso.</h4>
+          <p class="banner-text">A Manacá está revolucionando a antecipação de recebíveis oferecendo a taxa mais baixa do mercado com o máximo de transparência.</p>
+          <div id="click-simulate" class="button">Faça sua simulação</div>
+        </div>
+          <%= image_tag 'imagens/symbol.svg', class: "banner-logo" %>
+      </div>
+    </section>
+
+
+    <!-- INPUT CONTAINER -->
     <div class="container">
       <div class="col-12 offset-sm-3 col-sm-6">
-        <div class="invoice-wrapper">
+        <div id="input-data" class="hidden invoice-wrapper">
           <%= image_tag 'manaca-icon.png', class: 'invoice-wrapper-logo' %>
           <%= yield %>
         </div>
+      </div>
+    </div>
+    <!-- HASHTAG FIELD -->
+    <div class="hashtags-field">
+      <div class="hashtags-box">
+        <p class="hashtags">#SomosTodosEmpreendedores</p>
+        <h4>Nós não criamos a Manacá porque gostávamos de factoring.</h4>
+        <p style="color: #4f82fc">Muito pelo contrário.</p>
+        <p>A Manacá foi fundada com a missão de ser o melhor parceiro financeiro que o empreendedor pode ter.<br> Sendo assim, temos como principal objetivo, provar que mesmo em um mercado antigo e burocrático, é possível ser simples, moderno e eficiente.</p>
+      </div>
+    </div>
 
-        <section id="hashtags">
-          <div class="hashtags-box">
-            <span class="hashtags-promo">#AGenteConfiaAntes</span>
-            <span class="hashtags-promo">#AntecipeSeuSucesso</span>
-          </div>
-          <div class="hashtags-box">
-            <span class="hashtags-promo">#semTAC</span>
-            <span class="hashtags-promo">#semTED</span>
-            <span class="hashtags-promo">#semIOF</span>
-          </div>
-          <div class="hashtags-box">
-            <span class="hashtags-promo">#ZeroTaxaBoleto</span>
-            <span class="hashtags-promo">#ZeroTaxaConsultaSerasa</span>
-          </div>
-        </div>
+    <!-- HOW IT WORKS -->
+    <div class="card-grid">
+      <h3>Como Funciona.</h3>
+      <div class="card-content">
+        <%= image_tag 'imagens/contact-information-azul.svg', class: 'card-image' %>
+        <h4><spam class="index">01</spam> Cadastre-se online</h4>
+        <p>Inscreva-se em menos de 10 minutos com detalhes básicos sobre sua empresa e seus clientes.</p>
+      </div>
+
+      <div class="card-content">
+        <%= image_tag 'imagens/success.svg', class: 'card-image' %>
+        <h4><spam class="index">02</spam> Seja aprovado</h4>
+        <p>Analisaremos o seu cadastro e em até 48 horas você saberá qual o limite e taxa aprovados.</p>
+      </div>
+
+      <div class="card-content">
+        <%= image_tag 'imagens/writing-azul.svg', class: 'card-image' %>
+        <h4><spam class="index">03</spam> Solicite uma antecipação</h4>
+        <p>Suba suas notas fiscaisna plataforma enviando arquivos .xml ou digitando a operação. Simule e aprove as faturas que deseja antecipar.</p>
+      </div>
+
+      <div class="card-content">
+        <%= image_tag 'imagens/wristwatch-azul.svg', class: 'card-image' %>
+        <h4><spam class="index">04</spam> Receba na hora</h4>
+        <p>Nós aprovamos a operação e pagamos na conta desejada em até duas horas.</p>
       </div>
     </div>
 
 
-    <div class="container">
-
-      <section id="parceiros">
-        <h2 class="secondary-title text-center">Parceiros</h2>
-        <div class="row parceiros">
-          <div class="col-12 col-sm-6 col-md-3">
-            <%= image_tag "itau.svg", class: 'logo-parceiros' %>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3">
-            <%= image_tag "serasa-experian-logo.png", class: 'logo-parceiros' %>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3">
-            <%= image_tag "crdc_horiz-01.jpg", class: 'logo-parceiros' %>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3">
-            <%= image_tag "logotipo.png", class: 'logo-parceiros' %>
-          </div>
-        </div>
-      </section>
-
-      <section id="depoimentos">
-        <h2 class="secondary-title text-center">Depoimentos</h2>
-        <div class="row">
-          <div class="col-12 col-md-4">
-            <div class="testimonial-wrapper">
-              <p class="testimonial-text">“Muito impressionado com a transparência e simplicidade. Sabia exatamente qual era o custo e quanto ia receber. Recomendo”</p>
-              <p class="testimonial-author">Marcos R.</p>
-              <p class="author-position">Empreendedor - Indústria Metalúrgica</p>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="testimonial-wrapper">
-              <p class="testimonial-text">“O customer service da Manacá tem sido excelente e facilitou o meu dia dia. A combinação de tecnologia e pessoas faz com que a antecipação seja bastante rápida”</p>
-              <p class="testimonial-author">Pamela C.</p>
-              <p class="author-position">Gerente Financeira - Alimentos e Bebidas</p>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="testimonial-wrapper">
-              <p class="testimonial-text">“A melhor taxa que encontrei”</p>
-              <p class="testimonial-author">Murilo A.</p>
-              <p class="author-position">Diretor Financeiro - Tecnologia da Informação</p>
-            </div>
-          </div>
-        </div>
-      </section>
+    <!-- BOX SIMULATE -->
+    <div class="box">
+      <div class="box-simulate">
+        <div><h3>Simule uma operação.</h3></div>
+        <div id="click-btn" class="click-btn"><p>CLIQUE AQUI</p></div>
+      </div>
     </div>
 
+    <!-- INFOS -->
+    <div id="infos" class="infos">
+      <div class="info-title">
+        Fortaleça seu caixa e <br><spam class="manaca-color">acelere seu conhecimento.</spam>
+      </div>
+      <div class="info-cards">
+        <div class="cards">
+          <%= image_tag "imagens/clock.svg", class: "info-icon" %>
+          <h4 class="subtitle">Comece em 5 minutos</h4>
+          <p class="info-text">Cadastro aprovado em até 48 horas e dinheiro na conta em até duas horas após o envio da operação. Rápido para começar, rápido para antecipar.</p>
+        </div>
+        <div class="cards">
+          <%= image_tag "imagens/percent.svg", class: "info-icon" %>
+          <h4 class="subtitle">Taxas atrativas a partir de 1.7%</h4>
+          <p class="info-text">Sem taxas escondidas. Não cobramos consultas aos bureaus de crédito. Não cobramos TED, DOC ou qualquer outra sigla, aqui você paga exatamente o que vê.</p>
+        </div>
+        <div class="cards">
+          <%= image_tag "imagens/security.svg", class: "info-icon" %>
+          <h4 class="subtitle">Transparência radical</h4>
+          <p class="info-text">Entenda exatamente quanto está pagando em cada operação e precifique melhor a venda dos seus produtos e serviços.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEES AND TAXES -->
+    <div class="fees">
+      <div class="fees-text">
+        <h4>Oferecemos <spam class="manaca-color">as melhores taxas.</spam></h4>
+        <p>Nossas taxas variam entre 1,75% e 3,50%, muito menos do que os 5% de desconto que geralmente as empresas oferecem para pagamento à vista. Conforme sua empresa cresce e evolui, seu custo com a Manacá diminui também. Excelentes empresas merecem excelentes taxas. Chega dessa história de que antecipação de recebíveis é um produto caro. Nossas taxas não são apenas competitivas, elas são as melhores.</p>
+      </div>
+      <div class="fees-graph">
+        <h5 class="manaca-color">Os competidores chegam a ser 2x mais caros.</h5>
+        <p>A Manacá não só não incorre em IOF ou Ad-valorem, como também oferece a taxa mais baixa do mercado.</p>
+      </div>
+    </div>
+
+
+    <!-- BENEFITS -->
+    <div class="benefits">
+      <div class="taxes-numbers">
+        <div class="subtitle">Taxa de antecipação</div>
+        <div class="numbers">1,75% a 3,5% a.m.</div>
+        <div class="subtitle">Consulta ao bureaux de crédito</div>
+        <div class="numbers">20 a 55 reais</div>
+        <div class="subtitle">TED e boleto</div>
+        <div class="numbers">11 e 3 reais, respectivamente</div>
+        <div class="subtitle">IOF, Ad-valorem, TAC, etc.</div>
+        <div class="numbers">Zero, nada, 0.</div>
+      </div>
+      <div class="taxes-infos">
+        <div class="taxes-subtitle">Prezamos pelo <spam class="manaca-color">máximo de transparência.</spam></div>
+        <div class="taxes-text">Oferecemos sempre transparência radical nas operações. Aqui você saberá exatamente quanto está pagando pela operação, e receberá exatamente aquilo que enxergar na tela. Sem taxas escondidas. Sem asteriscos. Sem letras miúdas. Nada. Não importa se você não sabe fazer as contas no detalhe de desconto de duplicatas, nós fazemos para você e te mostramos na vírgula, sempre.</div>
+      </div>
+    </div>
+
+    <!-- REVIEW -->
+    <div class="review">
+      <div class="review-icon">
+        <%= image_tag 'imagens/marker.svg', class: 'img' %>
+      </div>
+      <div class="review-text">Muito impressionado com a transparência e simplicidade. Sabia exatamente qual era o custo e quanto ia receber. Recomendo.</div>
+      <div class="divisor"></div>
+      <div class="review-autor">Marcos R., Empreendedor, <spam class="manaca-color">Indústria Metalúrgica</spam></div>
+    </div>
+
+    <!-- ANTECIPATION -->
+    <div class="antecipation">
+      <div class="antecipation-info">
+        <div class="ant-title">Antecipação de <spam class="manaca-color">recebíveis.</spam></div>
+        <div class="ant-text">Transforme suas vendas a prazo em vendas à vista. Oferecemos as taxas mais baratas do mercado com o máximo de transparência e comodidade.</div>
+        <div id="ant-button" class="ant-button">COMECE JÁ</div>
+      </div>
+      <div class="ant-image">
+        <%= image_tag "imagens/banking.png", class: 'img' %>
+      </div>
+    </div>
     <%= render 'shared/footer' %>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
