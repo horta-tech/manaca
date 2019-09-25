@@ -3,14 +3,14 @@
 }
 
 #upload_nota_button {
-  padding: 24px;
-  color: $manaca-purple;
-  background-color: white;
+  padding: 20px;
+  color: white;
+  background-color: $manaca-purple;
   border: none;
   font-weight: bold;
-  text-align: center;
-  border-radius: 8px;
+  border-radius: 3px;
   margin: 0 auto;
+  font-size: 18px;
 }
 
 input::placeholder {
@@ -25,7 +25,7 @@ input::placeholder {
   border: none;
   text-align: center;
   border-radius: 4px ;
-  margin: 0 auto;
+  margin: 10 auto;
   text-decoration: none;
   font-weight: normal;
   :hover {
@@ -40,25 +40,42 @@ input::placeholder {
   flex-direction: column;
   text-align: center;
   align-items: center;
+  width: 601px;
+  margin: 43px auto;
+
   .hashtags {
     font-family: 'Avenir';
     color: #2c4687;
-    border-bottom: 3px solid $manaca-purple;
+    border-bottom: 6px solid $manaca-purple;
     margin-bottom: 30px;
     margin-top: 52px;
+    padding: 0;
   }
   p {
     font-family: 'Avenir';
     color: #585a5e;
     max-width: 635px;
     padding: 20px;
+    font-size: 25px;
+    margin-bottom: 0;
   }
   h4 {
+    font-family: 'Avenir' !important;
     color: #2c4687;
+    font-weight: bold;
+    font-size: 38px;
   }
 }
 
-
+@media (max-width: 767px) {
+  .hashtags-box {
+    max-width: 300px !important;
+    p {
+      max-width: 300px !important;
+      font-size: 20px;
+    }
+  }
+}
 
 .hashtags-promo {
   color: #EE76FE;
@@ -73,13 +90,14 @@ input::placeholder {
 }
 
 .invoice-wrapper {
-  background-color: rgb(220, 220, 220);
-  border-radius: 8px;
+  font-family: 'Avenir';
+  border: 8px solid $manaca-purple;
+  border-radius: 2px;
   padding: 16px 40px 70px 40px;
   position: relative;
   text-align: center;
-  margin-bottom: 20px;
-  margin-top: 32px;
+  margin-bottom: 62px;
+  margin-top: 57px;
   transition: 0.5s;
 }
 
@@ -113,6 +131,7 @@ input::placeholder {
 
 #invoice_filename {
   color: rgba(120, 120, 120, 1);
+  margin-top: 6px;
 }
 
 input {
@@ -123,22 +142,25 @@ input {
 .lead-span {
   display: inline-block;
   background-color: white;
-  width: 200px;
+  width: auto;
   border-radius: 4px;
-  color: $manaca-purple;
-  margin-left: 24px;
+  color: #4166FC;
+  margin: 0 auto;
   align-self: flex-end;
 }
 
 .lead-info {
   display: flex;
+  flex-direction: column;
   align-items: center;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .lead-text {
   flex-grow: 1;
   text-align: left;
+  color: #676E72;
 }
 
 #parceiros {
@@ -178,7 +200,7 @@ input {
 @media (max-width: 576px) {
   .invoice-wrapper {
   padding: 16px 16px 70px 16px;
-  margin-bottom: 50px;
+  margin-bottom: 105px;
   }
 
   .lead-info {
@@ -202,6 +224,7 @@ input {
   }
 }
 
+// CARD SECTION
 .card-grid {
   font-family: 'Avenir';
   display: flex;
@@ -211,6 +234,9 @@ input {
   padding: 16px;
   color: #585a5e;
 
+  .card-content {
+    width: 440px;
+  }
   .card-image {
     margin: 7px;
     height: 56px;
@@ -220,6 +246,7 @@ input {
   color: #162d5a;
   font-family: 'Avenir';
   font-weight: bold;
+  font-size: 45px;
   }
   h4 {
   font-family: 'Avenir';
@@ -229,35 +256,32 @@ input {
   }
 }
 
+@media (max-width: 767px) {
+  .card-content {
+    width: 300px !important;
+  }
+}
+
+// BOX SECTION
+
 .box {
   display: flex;
   justify-content: center;
+  margin-top: 35px;
   margin-bottom: 15px;
 
   .box-simulate {
     display: flex;
     text-align: center;
     align-items: center;
-    border: 5px solid $manaca-purple;
-    padding: 25px;
+    border: 6px solid $manaca-purple;
+    padding: 45px 70px;
     min-height: 90px;
 
     .click-btn {
       cursor: pointer;
       color: white;
       background-color: $manaca-purple;
-    }
-
-    h3 {
-      color: $manaca-purple;
-      font-family: 'Avenir';
-      font-weight: bold;
-      margin-top: 7px;
-      margin-right: 7px;
-      margin-bottom: 0px;
-    }
-
-    p {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -265,6 +289,16 @@ input {
       height: 52px;
       font-family: 'Avenir';
       margin-bottom: 0 !important;
+      padding-top: 4px;
+    }
+
+    h3 {
+      color: $manaca-purple;
+      font-family: 'Avenir';
+      font-weight: bold;
+      margin-top: 7px;
+      margin-right: 65px;
+      margin-bottom: 0px;
     }
   }
 }
@@ -275,6 +309,12 @@ input {
   }
   .box-simulate {
     flex-direction: column;
+    max-width: 300px !important;
+
+    h3 {
+      margin-right: 0 !important;
+      margin-bottom: 5px !important;
+    }
   }
   .click-btn {
     margin-top: 7px;
@@ -291,14 +331,15 @@ input {
   margin-top: 60px;
   align-items: center;
   font-family:  'Avenir';
+  padding: 35px 0;
 
   .info-title {
     text-align: center;
     font-family:  'Avenir';
     font-weight: bold;
-    font-size: 34px;
-    margin: 16px;
-    width: 0 auto;
+    font-size: 32px;
+    margin: 32px;
+    // width: 0 auto;
     max-width: 420px;
   }
 
@@ -306,19 +347,27 @@ input {
     color: $manaca-purple;
   }
 
+  .info-cards {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 15px;
+    width: 100%;
+  }
+
   .cards {
     align-items: start;
     margin: 7px 15px;
+    max-width: 362px;
+    padding: 0 27px;
+
+    p {
+      font-size: 14px;
+    }
   }
 
-  .info-cards {
-    display: flex;
-    justify-content: center;
-    margin: 0 15px;
-  }
   .subtitle {
     font-family:  'Avenir';
-    font-size: 21px;
+    font-size: 18px;
   }
   .info-icon {
     margin: 7px;
@@ -330,9 +379,11 @@ input {
 @media (max-width: 767px) {
   .info-cards {
     flex-direction: column;
+    align-items: center;
   }
   .info-title {
-    font-size: 28px;
+    text-align: start !important;
+    font-size: 28px !important;
   }
 }
 
@@ -344,36 +395,89 @@ input {
 // FEES AND TAXES
 .fees {
   display: flex;
-  justify-content: center;
-  margin: 50px 30px;
+  justify-content: space-evenly;
+  margin: 100px 30px;
   font-family:  'Avenir' !important;
   color: #162D5A;
+  align-items: center;
 
   .fees-text {
-    width: 970px;
+    width: 550px;
+    padding: 45px 0;
     padding-right: 25px;
 
     h4 {
       font-family:  'Avenir';
       font-weight: bold;
-      font-size: 26px;
+      font-size: 34px;
     }
     p {
       text-align: justify;
     }
   }
+
   .fees-graph {
-    padding: 15px;
-    box-shadow: 1px 1px 15px;
+    max-width: 556px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 18px;
+    box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    height: fit-content;
+    margin-bottom: 36px;
 
     h5 {
       font-family:  'Avenir';
-      font-size: 17px;
+      font-size: 22px;
     }
     p {
       text-align: justify;
       font-size: 15px;
+    }
+
+    .graph-content {
+      display: flex;
+      align-self: start;
+      flex-direction: column;
+      margin: 0 auto;
+
+      .graph-data-manaca {
+        display: flex;
+        align-items: center;
+        margin-left: 105px;
+        .graph-manaca {
+          background-color: $manaca-purple;
+          width: 70px;
+          height: 30px;
+          margin: 2px 10px;
+        }
+      }
+      .graph-data-fidcs {
+        opacity: 0.7;
+        display: flex;
+        align-items: center;
+        margin-left: 105px;
+        .graph-fidcs {
+          background-color: $manaca-purple;
+          width: 106px;
+          height: 30px;
+          margin: 2px 22px;
+        }
+      }
+      .graph-data-factor {
+        opacity: 0.7;
+        display: flex;
+        align-items: center;
+        margin-left: 74px;;
+        .graph-factor {
+          background-image: linear-gradient(to right, $manaca-purple , #d5a8fc);
+          width: 175px;
+          height: 30px;
+          margin: 2px 22px;
+        }
+      }
     }
   }
 }
@@ -386,10 +490,34 @@ input {
       width: auto;
       padding-right: 0;
       text-align: center;
-
+      margin: 0 auto;
+      text-align-last: center;
     }
+
     .fees-graph {
+      margin: 0;
       margin-top: 25px;
+      .graph-data-manaca {
+        margin-left: 3px !important;
+        .graph-manaca {
+          width: 51px !important;
+          margin: 2px 64px 2px 23px !important;
+        }
+      }
+      .graph-data-fidcs {
+        margin-left: 4px !important;
+        .graph-fidcs {
+          margin: 2px 33px 2px 35px !important;
+          width: 82px !important;
+        }
+      }
+      .graph-data-factor {
+        margin-left: 2px !important;
+        .graph-factor {
+          margin: 2px 6px !important;
+          width: 110px !important;
+        }
+      }
     }
   }
 
@@ -406,8 +534,12 @@ input {
   margin-bottom: 40px;
 
   .taxes-numbers {
-    border: 5px solid $manaca-purple;
+    border: 6px solid #4166FC;
     padding: 12px;
+    padding-right: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
     .subtitle {
       color: #585a5e;
@@ -425,6 +557,7 @@ input {
       color: #162D5A;
       font-weight: bold;
       margin-bottom: 12px;
+      font-size: 35px;
     }
     .taxes-text {
       text-align: justify;
@@ -436,6 +569,15 @@ input {
 @media (max-width: 767px) {
   .benefits {
     flex-direction: column;
+
+    .taxes-infos {
+      text-align: center;
+
+      .taxes-text{
+        text-align: justify;
+        text-align-last: center;
+      }
+    }
 
     .taxes-numbers {
       margin: 0 auto;
@@ -452,18 +594,62 @@ input {
 }
 
 // REVIEW
+.slider-review {
+  width: 100%;
+  text-align: center;
+}
+
+// Styling the default Slick dots
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+
+  margin: 0;
+  padding: 1rem 0;
+
+  list-style-type: none;
+
+    li {
+      margin: 0 0.25rem;
+    }
+
+    button {
+      display: block;
+      width: 1rem;
+      height: 1rem;
+      padding: 0;
+
+      border: none;
+      border-radius: 50%;
+      background-color: $manaca-purple;
+
+      text-indent: -9999px;
+    }
+
+    li.slick-active button {
+      background-color: $manaca-purple;
+    }
+
+}
+
+.slick-dots li button:before {
+  background-color: $manaca-purple;
+  border-radius: 50%;
+}
 
 .review {
   text-align: center;
-  width: 352px;
+  width: 374px !important;
   margin: 0 auto;
   font-family:  'Avenir';
-
+  margin-top: 40px;
+  height: 315px;
 
   .review-icon {
     width: 60px;
     margin: 0 auto;
-    border: 1px #3540ff solid;
+    border: 2px #3540ff solid;
     border-radius: 50px;
     height: 60px;
     display: flex;
@@ -475,11 +661,11 @@ input {
     padding: 20px;
   }
   .divisor{
-    width: 30px;
-    height: 2px;
+    width: 50px;
+    height: 3px;
     background: #0339de;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 0px;
   }
   .review-autor {
     padding: 15px 0;
@@ -488,7 +674,7 @@ input {
 
 @media (max-width: 767px) {
   .review{
-    width: 300px;
+    width: 300px !important;
   }
 }
 
@@ -499,19 +685,20 @@ input {
   justify-content: space-evenly;
   margin: 0 auto;
   margin-top: 62px;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
+  padding: 0 18px;
 
-  .antecipation-info{
+  .antecipation-info {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    width: 300px;
+    width: 400px;
     font-family: 'Avenir';
 
     .ant-title {
       color: #162d5a;
       font-weight: bold;
-      font-size: 28px;
+      font-size: 40px;
     }
     .ant-text {
       text-align: justify;
@@ -523,13 +710,13 @@ input {
       text-align: center;
       border: 1px $manaca-purple solid;
       color: $manaca-purple;
-      padding: 10px 10px 5px 10px;
+      padding: 16px 16px 10px 16px;
     }
   }
 
   .ant-image {
     .img {
-      width: 300px;
+      width: 400px;
     }
   }
 }
@@ -538,8 +725,17 @@ input {
   .antecipation {
     flex-direction: column;
     align-items: center;
+    .antecipation-info {
+      padding: 9px;
+      align-items: center;
+      text-align: center;
+      width: 300px;
+    }
   }
   .ant-image {
     margin-top: 40px;
+    .img {
+      width: 300px !important;
+    }
   }
 }

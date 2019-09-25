@@ -1,15 +1,20 @@
 import { input_change } from "../components/input-data"
 import "bootstrap";
+// import $ from 'jquery';
+import 'slick-carousel';
+
+
 
 input_change();
 
-
+const simulateField = document.getElementById('simulate');
 const leadInfo = document.getElementById("lead-info");
 const wrapper = document.getElementById("wrapper");
 const success = document.getElementById("success");
 if (leadInfo || wrapper || success) {
   const inputField = document.getElementById('input-data');
   inputField.classList.remove('hidden');
+  simulateField.classList.add('hidden');
   inputField.scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 
@@ -51,3 +56,13 @@ if (fileInput) {
 if (fileInput) {
   setFilename();
 }
+
+$("#slider").slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: true,
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 6000
+});
