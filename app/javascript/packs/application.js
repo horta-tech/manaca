@@ -1,5 +1,9 @@
 import { input_change } from "../components/input-data"
 import "bootstrap";
+// import $ from 'jquery';
+import 'slick-carousel';
+
+
 
 input_change();
 
@@ -52,3 +56,13 @@ if (fileInput) {
 if (fileInput) {
   setFilename();
 }
+
+$("#slider").slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: true,
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 6000
+});

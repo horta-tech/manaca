@@ -6,7 +6,6 @@ const manacaBtn = document.querySelector('.manaca-btn');
 const simulateField = document.getElementById('simulate');
 const inputField = document.getElementById('input-data');
 
-console.log(simulateField);
 const input_change = () => {
   if(clickSimulate) {
     clickSimulate.addEventListener('click', () => {
