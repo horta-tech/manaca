@@ -21,7 +21,7 @@
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'Roboto-thin';
   src: font-url('ROBOTO-THIN.TTF') format('truetype');
   font-weight: thin;
   font-style: normal;
@@ -44,6 +44,27 @@
 @font-face {
   font-family: 'Avenir';
   src: font-url('AVENIRLTSTD-LIGHT.OTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir-medium';
+  src: font-url('AvenirLTStd-Medium.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir-black';
+  src: font-url('AvenirLTStd-Black.otf') format('truetype');
+  font-weight: black;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir-roman';
+  src: font-url('AvenirLTStd-Roman.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
