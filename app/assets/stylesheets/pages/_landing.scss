@@ -45,7 +45,7 @@ input::placeholder {
 
   .hashtags {
     font-family: 'Avenir';
-    color: #2c4687;
+    color: $manaca-strong-blue;
     border-bottom: 6px solid $manaca-purple;
     margin-bottom: 30px;
     margin-top: 52px;
@@ -53,7 +53,7 @@ input::placeholder {
   }
   p {
     font-family: 'Avenir';
-    color: #585a5e;
+    color: black;
     max-width: 635px;
     padding: 20px;
     font-size: 25px;
@@ -61,7 +61,7 @@ input::placeholder {
   }
   h4 {
     font-family: 'Avenir' !important;
-    color: #2c4687;
+    color: $manaca-strong-blue;
     font-weight: bold;
     font-size: 38px;
   }
@@ -78,7 +78,7 @@ input::placeholder {
 }
 
 .hashtags-promo {
-  color: #EE76FE;
+  color: $manaca-purple;
   margin: 12px;
   line-height: 1.3em;
 }
@@ -144,7 +144,7 @@ input {
   background-color: white;
   width: auto;
   border-radius: 4px;
-  color: #4166FC;
+  color: $manaca-purple;
   margin: 0 auto;
   align-self: flex-end;
 }
@@ -160,7 +160,7 @@ input {
 .lead-text {
   flex-grow: 1;
   text-align: left;
-  color: #676E72;
+  color: $manaca-gray;
 }
 
 #parceiros {
@@ -232,7 +232,7 @@ input {
   text-align: center;
   align-items: center;
   padding: 16px;
-  color: #585a5e;
+  color: $manaca-gray;
 
   .card-content {
     width: 440px;
@@ -243,7 +243,7 @@ input {
   }
 
   h3 {
-  color: #162d5a;
+  color: $manaca-strong-blue;
   font-family: 'Avenir';
   font-weight: bold;
   font-size: 45px;
@@ -366,7 +366,7 @@ input {
   }
 
   .subtitle {
-    font-family:  'Avenir';
+    font-family:  'Avenir-medium';
     font-size: 18px;
   }
   .info-icon {
@@ -398,7 +398,7 @@ input {
   justify-content: space-evenly;
   margin: 100px 30px;
   font-family:  'Avenir' !important;
-  color: #162D5A;
+  color: $manaca-strong-blue;
   align-items: center;
 
   .fees-text {
@@ -455,7 +455,7 @@ input {
         }
       }
       .graph-data-fidcs {
-        opacity: 0.7;
+        opacity: 1;
         display: flex;
         align-items: center;
         margin-left: 105px;
@@ -467,12 +467,19 @@ input {
         }
       }
       .graph-data-factor {
-        opacity: 0.7;
+        opacity: 1;
         display: flex;
         align-items: center;
         margin-left: 74px;;
         .graph-factor {
-          background-image: linear-gradient(to right, $manaca-purple , #d5a8fc);
+          /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5383fe+79,9faefc+79,9faefc+90,ccd4f9+92,c2ccf9+99 */
+          background: #5383fe; /* Old browsers */
+          background: -moz-linear-gradient(left,  #5383fe 79%, #9faefc 79%, #9faefc 90%, #ccd4f9 92%, #c2ccf9 99%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(left,  #5383fe 79%,#9faefc 79%,#9faefc 90%,#ccd4f9 92%,#c2ccf9 99%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to right,  #5383fe 79%,#9faefc 79%,#9faefc 90%,#ccd4f9 92%,#c2ccf9 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5383fe', endColorstr='#c2ccf9',GradientType=1 ); /* IE6-9 */
+
+          // background-image: linear-gradient(to right, $manaca-purple , #d5a8fc);
           width: 175px;
           height: 30px;
           margin: 2px 22px;
@@ -542,7 +549,7 @@ input {
     justify-content: space-around;
 
     .subtitle {
-      color: #585a5e;
+      color: $manaca-gray;
     }
     .numbers {
       color: $manaca-purple;
@@ -554,7 +561,7 @@ input {
     width: 530px;
 
     .taxes-subtitle {
-      color: #162D5A;
+      color: $manaca-strong-blue;
       font-weight: bold;
       margin-bottom: 12px;
       font-size: 35px;
@@ -642,7 +649,7 @@ input {
   text-align: center;
   width: 374px !important;
   margin: 0 auto;
-  font-family:  'Avenir';
+  font-family:  'Avenir-roman';
   margin-top: 40px;
   height: 315px;
 
@@ -657,7 +664,7 @@ input {
     justify-content: center;
   }
   .review-text {
-    color: #162d5a;
+    color: $manaca-strong-blue;
     padding: 20px;
   }
   .divisor{
@@ -696,7 +703,7 @@ input {
     font-family: 'Avenir';
 
     .ant-title {
-      color: #162d5a;
+      color: $manaca-strong-blue;
       font-weight: bold;
       font-size: 40px;
     }
