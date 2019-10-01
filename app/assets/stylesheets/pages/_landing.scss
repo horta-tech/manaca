@@ -357,17 +357,17 @@ input {
   .cards {
     align-items: start;
     margin: 7px 15px;
-    max-width: 362px;
-    padding: 0 27px;
+    width: 362px;
+    padding: 0 ;
 
     p {
-      font-size: 14px;
+      font-size: 18px;
     }
   }
 
   .subtitle {
     font-family:  'Avenir-medium';
-    font-size: 18px;
+    font-size: 22px;
   }
   .info-icon {
     margin: 7px;
@@ -376,13 +376,27 @@ input {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1439px) {
+  .cards {
+    width: 90% !important;
+  }
   .info-cards {
     flex-direction: column;
     align-items: center;
   }
   .info-title {
     text-align: start !important;
+    // font-size: 28px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  // .info-cards {
+  //   flex-direction: column;
+  //   align-items: center;
+  // }
+  .info-title {
+    // text-align: start !important;
     font-size: 28px !important;
   }
 }
