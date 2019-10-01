@@ -617,6 +617,8 @@ input {
 
   list-style-type: none;
 
+  bottom: -40px;
+
     li {
       margin: 0 0.25rem;
     }
@@ -647,7 +649,7 @@ input {
 
 .review {
   text-align: center;
-  width: 374px !important;
+  width: 500px !important;
   margin: 0 auto;
   font-family:  'Avenir-roman';
   margin-top: 40px;
@@ -666,6 +668,7 @@ input {
   .review-text {
     color: $manaca-strong-blue;
     padding: 20px;
+    font-size: 20px;
   }
   .divisor{
     width: 50px;
@@ -673,15 +676,17 @@ input {
     background: #0339de;
     margin: 0 auto;
     margin-top: 0px;
+    margin-bottom: 6px;
   }
   .review-autor {
     padding: 15px 0;
+    font-size: 17px;
   }
 }
 
 @media (max-width: 767px) {
   .review{
-    width: 300px !important;
+    width: 90% !important;
   }
 }
 
