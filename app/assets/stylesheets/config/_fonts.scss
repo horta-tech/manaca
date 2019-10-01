@@ -69,6 +69,34 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Avenir-Next-Light';
+  src: font-url('Avenir-Next-Light.woff2') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir-Next-Medium';
+  src: font-url('Avenir-Next-Medium.woff2') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir-Next-Bold';
+  src: font-url('Avenir-Next-Bold.woff2') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir-Next-Black';
+  src: font-url('Avenir-Next-Black.woff2') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 $body-font: "Roboto", "Helvetica", "sans-serif";
 $headers-font: "Roboto", "Helvetica", "sans-serif";

@@ -160,7 +160,7 @@ input {
 .lead-text {
   flex-grow: 1;
   text-align: left;
-  color: $manaca-gray;
+  color: #162d5a;
 }
 
 #parceiros {
@@ -357,17 +357,17 @@ input {
   .cards {
     align-items: start;
     margin: 7px 15px;
-    max-width: 362px;
-    padding: 0 27px;
+    width: 362px;
+    padding: 0 ;
 
     p {
-      font-size: 14px;
+      font-size: 18px;
     }
   }
 
   .subtitle {
     font-family:  'Avenir-medium';
-    font-size: 18px;
+    font-size: 22px;
   }
   .info-icon {
     margin: 7px;
@@ -376,13 +376,27 @@ input {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1439px) {
+  .cards {
+    width: 90% !important;
+  }
   .info-cards {
     flex-direction: column;
     align-items: center;
   }
   .info-title {
     text-align: start !important;
+    // font-size: 28px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  // .info-cards {
+  //   flex-direction: column;
+  //   align-items: center;
+  // }
+  .info-title {
+    // text-align: start !important;
     font-size: 28px !important;
   }
 }
@@ -617,6 +631,8 @@ input {
 
   list-style-type: none;
 
+  bottom: -40px;
+
     li {
       margin: 0 0.25rem;
     }
@@ -647,7 +663,7 @@ input {
 
 .review {
   text-align: center;
-  width: 374px !important;
+  width: 500px !important;
   margin: 0 auto;
   font-family:  'Avenir-roman';
   margin-top: 40px;
@@ -666,6 +682,7 @@ input {
   .review-text {
     color: $manaca-strong-blue;
     padding: 20px;
+    font-size: 20px;
   }
   .divisor{
     width: 50px;
@@ -673,15 +690,17 @@ input {
     background: #0339de;
     margin: 0 auto;
     margin-top: 0px;
+    margin-bottom: 6px;
   }
   .review-autor {
     padding: 15px 0;
+    font-size: 17px;
   }
 }
 
 @media (max-width: 767px) {
   .review{
-    width: 300px !important;
+    width: 90% !important;
   }
 }
 
@@ -718,6 +737,15 @@ input {
       border: 1px $manaca-purple solid;
       color: $manaca-purple;
       padding: 16px 16px 10px 16px;
+      &:hover {
+        background-color: #353cff;
+        color: #fff;
+        transition: color .2s ease-out,background-color .2s ease-out,border .2s ease-out;
+        transition-property: color,background-color,border;
+        transition-duration: 0.2s,0.2s,0.2s;
+        transition-timing-function: ease-out,ease-out,ease-out;
+        transition-delay: 0s,0s,0s;
+      }
     }
   }
 
