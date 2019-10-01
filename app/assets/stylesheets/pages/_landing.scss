@@ -718,6 +718,15 @@ input {
       border: 1px $manaca-purple solid;
       color: $manaca-purple;
       padding: 16px 16px 10px 16px;
+      &:hover {
+        background-color: #353cff;
+        color: #fff;
+        transition: color .2s ease-out,background-color .2s ease-out,border .2s ease-out;
+        transition-property: color,background-color,border;
+        transition-duration: 0.2s,0.2s,0.2s;
+        transition-timing-function: ease-out,ease-out,ease-out;
+        transition-delay: 0s,0s,0s;
+      }
     }
   }
 

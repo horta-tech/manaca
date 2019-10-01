@@ -26,6 +26,16 @@
   background-color: white;
   color: $manaca-purple;
   font-family: 'Avenir';
+  &:hover {
+    color: #fff!important;
+    background: transparent;
+    border: 1px solid #fff;
+    transition: color .2s ease-out,background-color .2s ease-out,border .2s ease-out;
+    transition-property: color,background-color,border;
+    transition-duration: 0.2s,0.2s,0.2s;
+    transition-timing-function: ease-out,ease-out,ease-out;
+    transition-delay: 0s,0s,0s;
+  }
 }
 
 .banner-content {
